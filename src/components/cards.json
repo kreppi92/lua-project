@@ -1,0 +1,43 @@
+[
+    {
+      "x": 0,
+      "y": 0,
+      "w": 4,
+      "h": 1,
+      "i": "0",
+      "width": "350",
+      "height": "350",
+      "option": {
+        "backgroundColor": "#ffffff",
+        "title": { "text": "Line Area" },
+        "xAxis": {
+          "type": "category",
+          "boundaryGap": false,
+          "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        },
+        "yAxis": { "type": "value" },
+        "series": [
+          {
+            "data": [1320, 1230, 1190, 901, 934, 932, 820],
+            "type": "line",
+            "smooth": true,
+            "areaStyle": {
+              "color": {
+                "type": "linear",
+                "x": 0,
+                "y": 0,
+                "r": 0,
+                "colorStops": [
+                  { "offset": 0, "color": "#7956ec" },
+                  { "offset": 1, "color": "#2fb9f8" }
+                ],
+                "global": false
+              }
+            }
+          }
+        ],
+        "color": ["#7956ec"]
+      }
+    }
+  ]
+  

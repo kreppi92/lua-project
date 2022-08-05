@@ -1,0 +1,12 @@
+[
+    {
+      "id": 5264,
+      "user_id": "363fab26-6f4f-42dd-b952-a4eb2d1006a0",
+      "data_uuid": "e4ca1d3c63664a73918b7040dfb30391",
+      "details": "{\"ui\": \"SQL\", \"sql\": \"\", \"viz\": {\"eChart\": {\"grid\": {\"show\": false}, \"xAxis\": {\"data\": [\"\", \"Binance\", \"Bitfinex\", \"Coinbase\", \"FTX\", \"Kraken\", \"KuCoin\", \"Tether\"], \"type\": \"category\"}, \"yAxis\": [{\"show\": false, \"type\": \"value\", \"splitLine\": {\"show\": false}}, {\"show\": false, \"type\": \"value\", \"splitLine\": {\"show\": false}}], \"series\": [{\"id\": \"usd\", \"data\": [295123394750.2836, 231563868951.52747, 35160671541.25127, 96680593763.5229, 50002777731.31047, 22723030401.169506, 7284501699.077367, 1135209.615378852], \"name\": \"usd\", \"type\": \"line\", \"color\": \"#d9f99d\", \"dataType\": \"Float64\", \"aggregate\": \"sum\", \"yAxisIndex\": 0}], \"tooltip\": {\"trigger\": \"axis\", \"axisPointer\": {\"type\": \"cross\", \"crossStyle\": {\"color\": \"#999\"}}}, \"backgroundColor\": \"#1f2937\"}, \"series\": [{\"id\": \"usd\", \"data\": [295123394750.2836, 231563868951.52747, 35160671541.25127, 96680593763.5229, 50002777731.31047, 22723030401.169506, 7284501699.077367, 1135209.615378852], \"name\": \"usd\", \"type\": \"line\", \"color\": \"#d9f99d\", \"dataType\": \"Float64\", \"aggregate\": \"sum\", \"yAxisIndex\": 0}], \"source\": \"190228b120404363afcace7e1413a8d3\", \"x_axis\": \"to_cex\", \"series_0\": \"usd\", \"aggregate\": \"avg\", \"showAllLabels\": false, \"showSeriesOptions\": true}, \"name\": \"viz1\", \"tags\": [], \"type\": \"cell\", \"view\": {\"name\": \"\", \"type\": \"none\", \"delete\": false, \"refresh\": 86400, \"replace\": false, \"getResults\": false, \"refreshNow\": false}, \"hover\": false, \"pivot\": {\"source\": \"\", \"values\": []}, \"share\": {\"id\": \"team\", \"name\": \"Team\", \"description\": \"Only members of your team will be able to access\"}, \"results\": {\"data\": [], \"error\": null}, \"running\": false, \"cellType\": \"viz\", \"dataView\": \"hidden\", \"schedule\": {\"period\": \"none\"}, \"editorSize\": \"normal\", \"parameters\": {}, \"description\": \"\", \"destination\": {\"type\": \"none\", \"paused\": false, \"ifExists\": \"replace\", \"extraData\": null}, \"renderedSql\": \"\", \"currentRunTime\": \"\"}",
+      "is_public": false,
+      "is_archived": false,
+      "created_on": "2022-07-30 14:17:54.806559+00",
+      "updated_on": "2022-08-04 15:37:55.699+00"
+    }
+  ]
