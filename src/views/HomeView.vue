@@ -11,7 +11,9 @@ console.log(JSON.parse(notebook[0].details))
 
 const dataSourceOptions = Object.keys(JSON.parse(notebook[0].details).parameters)
 const xAxisOptions = JSON.parse(notebook[0].details).results.meta.map(option=>option.name)
-const chartTypeOptions = ["Line", "Bar"]
+const chartTypeOptions = ["line", "bar"]
+
+const chartType="line"
 </script>
 
 <template>
@@ -21,11 +23,11 @@ const chartTypeOptions = ["Line", "Bar"]
         <div>
           <LuaSelect label="Data Source" :options="dataSourceOptions" />
           <LuaSelect label="X Axis" :options="xAxisOptions" />
-          <LuaSelect label="Y Axis" :options="xAxisOptions" />
+          <LuaSelect label="Y Axis" :options="xAxisOptions" multiple />
           <LuaSelect label="Chart Type" :options="chartTypeOptions" />
         </div>
         <div>
-          <LuaChart />
+          <LuaChart :chartType="chartType"/>
         </div>
       </div>
     </LuaCard>

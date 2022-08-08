@@ -16,15 +16,19 @@ const props = defineProps({
   options: {
     type: Array,
     required: true
+  },
+  multiple: {
+    type: Boolean,
+    default: false
   }
 });
 
-const { options } = toRefs(props);
-const selectedPerson = ref(options.value[0]);
+const { options, multiple } = toRefs(props);
+const selection = ref(options.value[0]);
 </script>
 
 <template>
-  <Listbox v-model="selectedPerson">
+  <Listbox v-model="selection" :multiple="multiple">
     <div class="mt-4 text-slate-500 text-sm">
       {{ label }}
     </div>
@@ -32,7 +36,7 @@ const selectedPerson = ref(options.value[0]);
       <ListboxButton
         class="text-white relative w-full cursor-default rounded-sm py-2 pl-3 pr-10 text-left sm:text-sm border border-solid border-slate-600"
       >
-        <span class="block truncate">{{ selectedPerson }}</span>
+        <span class="block truncate">{{ selection }}</span>
         <span
           class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
         >

@@ -11,6 +11,7 @@
     "@headlessui/vue": "^1.6.7",
     "@heroicons/vue": "^1.0.6",
     "echarts": "^5.3.3",
+    "lodash": "^4.17.21",
     "pinia": "^2.0.16",
     "vue": "^3.2.37",
     "vue-echarts": "^6.2.3",
