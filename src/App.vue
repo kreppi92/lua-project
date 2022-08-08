@@ -1,11 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-// import chart from './chart.json'
-import notebook from './notebook.json'
-
-// console.log(JSON.parse(chart[0].details))
-console.log(JSON.parse(notebook[0].details))
 </script>
+
 
 <template>
   <div class="min-h-full">
@@ -43,3 +39,4 @@ console.log(JSON.parse(notebook[0].details))
     </main>
   </div>
 </template>
+

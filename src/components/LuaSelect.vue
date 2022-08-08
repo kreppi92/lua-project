@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref, toRefs } from "vue";
 import {
   Listbox,
   ListboxButton,
@@ -8,15 +8,19 @@ import {
 } from "@headlessui/vue";
 import { CheckIcon, SelectorIcon } from "@heroicons/vue/solid";
 
-const options = [{ name: "Line" }, { name: "Bar" }];
-const selectedPerson = ref(options[0]);
-
-defineProps({
+const props = defineProps({
   label: {
     type: String,
     required: true,
   },
+  options: {
+    type: Array,
+    required: true
+  }
 });
+
+const { options } = toRefs(props);
+const selectedPerson = ref(options.value[0]);
 </script>
 
 <template>
@@ -28,7 +32,7 @@ defineProps({
       <ListboxButton
         class="text-white relative w-full cursor-default rounded-sm py-2 pl-3 pr-10 text-left sm:text-sm border border-solid border-slate-600"
       >
-        <span class="block truncate">{{ selectedPerson.name }}</span>
+        <span class="block truncate">{{ selectedPerson }}</span>
         <span
           class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
         >
@@ -47,7 +51,7 @@ defineProps({
           <ListboxOption
             v-slot="{ active, selected }"
             v-for="person in options"
-            :key="person.name"
+            :key="person"
             :value="person"
             as="template"
           >
@@ -62,7 +66,7 @@ defineProps({
                   selected ? 'text-slate-200' : 'font-normal',
                   'block truncate',
                 ]"
-                >{{ person.name }}</span
+                >{{ person }}</span
               >
               <span
                 v-if="selected"
